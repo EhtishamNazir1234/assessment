@@ -30,7 +30,7 @@ export default function Counter() {
           Add
         </button>
       </div>
-      <ul className="space-y-2">
+      <ul className="space-y-2 overflow-y-scroll max-h-50">
         {todos.map((todo, index) => (
           <li
             key={index}
