@@ -6,7 +6,7 @@ export default function middleware(request: NextRequest) {
   if ((request.nextUrl.pathname, startsWith("/dashboard") && token)) {
     return NextResponse.redirect(new URL("/", request.url));
   }
-  return NextResponse.next;
+  // return NextResponse.next;
 }
 
 export const config = {
