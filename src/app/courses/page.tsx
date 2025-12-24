@@ -1,4 +1,5 @@
 import { getCourses } from "@/lib/data";
+import Link from "next/link";
 
 export const revalidate = 60; // ISR: revalidate every 60 seconds
 
@@ -13,7 +14,7 @@ export default async function Courses() {
       </p>
       <div className="grid gap-4 md:grid-cols-2 lg:grid-cols-3">
         {courses.map((course) => (
-          <a
+          <Link
             key={course.id}
             href={`/courses/${course.id}`}
             className="border p-6 rounded-lg hover:shadow-lg transition"
@@ -23,7 +24,7 @@ export default async function Courses() {
             <p className="text-sm text-gray-500">
               {course.duration} • {course.enrolled} enrolled
             </p>
-          </a>
+          </Link>
         ))}
       </div>
     </div>

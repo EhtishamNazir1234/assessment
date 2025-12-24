@@ -2,7 +2,7 @@ import Link from "next/link";
 
 export default function Home() {
   return (
-    <div className="text-center py-20">
+    <div className="text-cente py-20">
       <h1 className="text-5xl font-bold mb-6">Welcome to LMS App</h1>
       <p className="text-xl text-gray-600 mb-8">Demo Assessment</p>
       <div className="flex flex-col gap-4 justify-center">
